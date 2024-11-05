@@ -3,7 +3,7 @@ const colors = require("tailwindcss/colors");
 const {
   default: flattenColorPalette,
 } = require("tailwindcss/lib/util/flattenColorPalette");
-
+ 
 const config: Config = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -21,7 +21,7 @@ const config: Config = {
           to: {
             transform: "translate(calc(-50% - 0.5rem))",
           },
-        },
+        }
       },
       colors: {
         background: "var(--background)",
@@ -31,7 +31,6 @@ const config: Config = {
   },
   plugins: [addVariablesForColors],
 };
-
 function addVariablesForColors({ addBase, theme }: any) {
   let allColors = flattenColorPalette(theme("colors"));
   let newVars = Object.fromEntries(
@@ -42,4 +41,5 @@ function addVariablesForColors({ addBase, theme }: any) {
     ":root": newVars,
   });
 }
+
 export default config;
