@@ -12,20 +12,27 @@ export default function Home() {
  
 
 
-      <main className="text-center mt-20">
-        <h1 className="text-4xl font-bold">
-          Welcome to the intelligent sports era.
-        </h1>
-        <p className="mt-4 text-lg">
-          We capture the smartest sports data and transform it into even smarter
-          tech and fan experiences. What will you build?
-        </p>
-        <button className="mt-8 bg-white text-black py-2 px-6 rounded-full">
-          Explore Genius
-        </button>
-      </main>
+    <div className=" py-10 flex flex-col items-center text-center mt-10">
+  <h1 className="header-font mb-5 ">
+    Welcome to the <br /> intelligent sports era.
+  </h1>
 
-      <section className="mt-20 flex justify-center">
+  <div>
+    <p className=" description-font opacity-80 " >
+      We capture the smartest sports data and transform it into even smarter <br />
+      tech and fan experiences. What will you build?
+    </p>
+  </div>
+
+  <button className="mt-8 bg-white text-black py-4 px-10 rounded-full">
+    Explore Genius
+  </button>
+</div>
+
+
+ 
+
+      <section className=" flex justify-center">
   <div className=" py-10 p-10 w-3/4 h-full flex items-center justify-center">
     <video
       className="w-full h-full object-cover"
