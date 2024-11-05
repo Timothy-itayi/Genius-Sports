@@ -1,10 +1,10 @@
 import Nav from "@/components/Nav";
 import { MovingCards } from "@/components/ui/ui-components/moving-cards";
-import Image from "next/image";
+
 
 export default function Home() {
   return (
-    <div className="bg-[#0B0D17] text-white font-roboto min-h-screen">
+    <div className="bg-[#0d1226]  text-white font-roboto min-h-screen">
      
     
     
@@ -26,10 +26,20 @@ export default function Home() {
       </main>
 
       <section className="mt-20 flex justify-center">
-        <div className="bg-black w-3/4 h-64 flex items-center justify-center">
-          <p className="text-yellow-400 text-2xl">A new</p>
-        </div>
-      </section>
+  <div className=" py-10 p-10 w-3/4 h-full flex items-center justify-center">
+    <video
+      className="w-full h-full object-cover"
+      autoPlay
+      loop
+      muted
+    >
+      <source src="https://cms.geniussports.com/wp-content/uploads/2024/07/Built-on-Genius-Film-Subs.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+
+  </div>
+</section>
+
 
  <MovingCards/>
     </div>

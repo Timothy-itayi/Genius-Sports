@@ -5,7 +5,7 @@ import { InfiniteMovingImages } from "../inifinte-moving-card";
 
 export function MovingCards() {
   return (
-    <div className="h-[10rem] rounded-md flex flex-col antialiased bg-white dark:bg-white dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
+    <div className="py-4 h-[10rem] flex flex-col antialiased bg-white dark:bg-white dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
       <InfiniteMovingImages
         items={logos}
         direction="left"
