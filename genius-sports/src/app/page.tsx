@@ -1,4 +1,4 @@
-import Nav from "@/components/Nav";
+import Nav from "@/components/header-components/Nav";
 import { MovingCards } from "@/components/ui/ui-components/moving-cards";
 
 

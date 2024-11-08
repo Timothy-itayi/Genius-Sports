@@ -5,18 +5,20 @@ import React, { useState } from "react";
 import Hamburger from "./hamburger";
 import Drawer from "./drawer";
 
+
 const Nav: React.FC = () => {
-
-
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleHamburger = () => {
-    console.log(isOpen);  // Check the current state
-    setIsOpen(!isOpen);
+    setIsOpen((prevIsOpen) => !prevIsOpen);  // Toggle the menu
   };
-  
 
 
+  // Handle click for hamburger button (for any other functionality you need)
+  const handleClick = (): void => {
+    console.log("Hamburger menu clicked");
+    toggleHamburger();  // Toggle the menu visibility
+  };
 
   return (
     <header className=" bg-[#0d1226] w-3/4 mx-auto flex justify-between items-center p-6">
@@ -33,7 +35,7 @@ const Nav: React.FC = () => {
         </div>
         {/* Hamburger button for small screens */}
         <button
-          onClick={toggleHamburger}
+        onClick={handleClick}
           className="focus:outline-none z-20 sm:hidden absolute top-4 right-4"
         >
           <Hamburger isOpen={isOpen} />
@@ -41,14 +43,16 @@ const Nav: React.FC = () => {
 
         {/* Drawer for mobile screens */}
         <Drawer isOpen={isOpen} setIsOpen={setIsOpen}>
-          <nav className="flex flex-col items-center space-y-6 ">
+        
+          <nav className="flex flex-col items-center space-y-6">
             <a href="#" className="text-black">Why Genius?</a>
             <a href="#" className="text-black">Products</a>
             <a href="#" className="text-black">Customers</a>
             <a href="#" className="text-black">Learn</a>
             <a href="#" className="text-black">Company</a>
           </nav>
-        </Drawer>
+      
+      </Drawer>
 
         {/* Desktop navigation links */}
         <nav className="flex inline-flex space-x-6 sm:flex hidden">
@@ -83,7 +87,7 @@ const Nav: React.FC = () => {
           {/* Parent container with relative position */}
           <div className="relative text-center">
             {/* Top set with higher z-index */}
-            <div className="relative z-30 overflow-hidden text-white">
+            <div className="relative z-30 overflow-hidden text-white button-font">
               <p className="inline-block">
                 <span className={clsx(
                   "inline-block animate-slide-up",
@@ -154,7 +158,8 @@ const Nav: React.FC = () => {
             <div className={clsx(
               "absolute text-center",
               "top-full", // This will position the bottom set below the top set
-              "text-[#0725cb]"
+              "text-[#0725cb]",
+              "button-font"
             )}>
               <div className=" ">
                 <p className="inline-block">

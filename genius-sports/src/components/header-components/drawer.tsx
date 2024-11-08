@@ -8,6 +8,14 @@ interface DrawerProps {
 }
 
 const Drawer: React.FC<DrawerProps> = ({ children, isOpen, setIsOpen }) => {
+  console.log('Drawer isOpen:', isOpen);
+
+
+    // Close the drawer when clicked outside
+    const handleClose = () => {
+      setIsOpen(false);
+    };
+   
   return (
     <AnimatePresence>
       {isOpen && (
@@ -17,6 +25,7 @@ const Drawer: React.FC<DrawerProps> = ({ children, isOpen, setIsOpen }) => {
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 0.3 }}
+          onClick={handleClose} 
         >
           <motion.div
             className="bg-white h-3/4 w-full  sm:w-full shadow-xl overflow-y-auto"
