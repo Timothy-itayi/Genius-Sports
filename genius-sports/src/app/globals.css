@@ -41,5 +41,27 @@ body {
 }
 
 
+.button-font{
+  font-family: 'ESKlarheitGrotesk-Md-TRIAL';
+
+}
 
 
+.title-content {
+  font-size: h3;
+  color:black;
+  font-weight: 200;
+  font-family: 'Figtree-SemiBold';
+}
+.body-content {
+  color: black;
+  font-family: 'Figtree-Light';
+  }
+  .arrow {
+    transition: transform 0.3s ease;
+  }
+  
+  .arrow.rotate-90 {
+    transform: rotate(90deg);
+  }
+  
