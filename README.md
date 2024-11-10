@@ -6,7 +6,8 @@ Project Overview
 Original vs. Clone
 
 ![og](https://github.com/user-attachments/assets/50f02079-d457-428c-8d0c-d5332efd6e1e)
-![Screen Shot 2024-11-11 at 8 18 09 am](https://github.com/user-attachments/assets/8e2b3f9d-7e72-4d79-b048-e95c72e2fd1d)
+![Screen Shot 2024-11-11 at 8 22 44 am](https://github.com/user-attachments/assets/ebcb7e1e-0df9-454a-a7f9-ca8cf4c2b0ac)
+
 
 
 
